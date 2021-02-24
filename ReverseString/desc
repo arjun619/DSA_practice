@@ -1,0 +1,3 @@
+Write a program to reverse a string using recursion.
+Input: "ABC"
+Output: "CBA"
