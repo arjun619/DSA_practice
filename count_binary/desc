@@ -1,0 +1,14 @@
+Given an array of integers find count of pair of numbers whose representation in binary has same number 1's in them.
+
+[1,2,3,4,5]
+In binary
+1 -> 1
+2 -> 10
+3 -> 11
+4 -> 100
+5 -> 101
+
+so in this array (1,2),(1,4),(2,4),(3,5) satisfy the condition.
+So the output will be 
+
+4
