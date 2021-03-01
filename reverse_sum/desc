@@ -1,0 +1,7 @@
+given an array of integers. reverse the numbers. If the reversed number begins with 0 then place the zeros at the end of the number and add the numbers of the array
+For example
+
+[23,120,301]
+
+output:
+345
