@@ -1,0 +1,7 @@
+Given two strings S and P. Find the smallest window in the S consisting of all the characters of P.
+
+Input:
+S = "timetopractice"
+P = "toc"
+Output: 
+toprac
