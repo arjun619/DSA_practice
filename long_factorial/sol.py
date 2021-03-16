@@ -1,6 +1,7 @@
 def largefactorial(n):
     a=[1]
     carry=0
+    n=n+1
     for i in range(1,n):
         for j in range(len(a)-1,-1,-1):
             temp=(a[j]*i)
@@ -16,9 +17,11 @@ def largefactorial(n):
             else:
                 a.insert(0,carry)
             carry=0
+    a=[str(i) for i in a]
+    a=''.join(a)
     print(a)
 
-largefactorial(100)
+largefactorial(2)
             
                 
             
