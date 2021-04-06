@@ -1,0 +1,9 @@
+Given a string, find the length of longest substring which is palindrome. 
+
+For example, 
+
+Input: Given string :"forgeeksskeegfor", 
+Output: 10
+
+Input: Given string :"Geeks", 
+Output: 2
