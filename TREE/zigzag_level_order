@@ -1,0 +1,25 @@
+def zigzagLevelOrder(self, root: Optional[TreeNode]) -> List[List[int]]:
+        if root==None:
+            return []
+        ans=[]
+        flag=0
+        queue=[root]
+        while queue:
+            cur_level=[]
+            next_level=[]
+            if flag==0:
+                flag=1
+            else:
+                flag=0
+            for node in queue:
+                cur_level.append(node.val)
+                if node.left:
+                    next_level.append(node.left)
+                if node.right:
+                    next_level.append(node.right)
+            queue=next_level
+            if flag==1:
+                ans.append(cur_level)
+            else:
+                ans.append(cur_level[::-1])
+        return ans
