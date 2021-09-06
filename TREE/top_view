@@ -1,0 +1,24 @@
+def top_view(root):
+    mystack=[[0,root]]
+    heapq.heapify(mystack)
+    ans=[]
+    verticals=[]
+    while mystack:
+        topper=mystack.pop()
+        if topper[0] not in verticals:
+            ans.append(topper)
+            verticals.append(topper[0])
+        
+        if topper[1].right:
+            mystack.append([topper[0]+1,topper[1].right])
+        if topper[1].left:
+            mystack.append([topper[0]-1,topper[1].left])
+    
+    ans.sort(key=lambda x: int(x[0]))
+    for i in ans:
+        print(i[1].val)
+        
+        
+        
+        
+    
